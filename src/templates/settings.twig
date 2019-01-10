@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Geo Lookup plugin for Craft CMS 3.x
+ *
+ * Geo Lookup Settings.twig
+ *
+ * @author    Paige Kato
+ * @copyright Copyright (c) 2019 Paige Kato
+ * @link      https://github.com/paigekato
+ * @package   GeoLookup
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("somevendor\\geolookup\\assetbundles\\geolookup\\GeoLookupAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}

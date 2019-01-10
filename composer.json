@@ -1,0 +1,41 @@
+{
+    "name": "somevendor/geo-lookup",
+    "description": "
+A simple plugin to get information about your user's location for Craft 3 cms. This plugin utilizes IP Stack's API; a key is required.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "geo lookup"
+    ],
+    "support": {
+        "docs": "https://github.com/paigekato/geo-lookup/blob/master/README.md",
+        "issues": "https://github.com/paigekato/geo-lookup/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paige Kato",
+            "homepage": "https://github.com/paigekato"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "somevendor\\geolookup\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Geo Lookup",
+        "handle": "geo-lookup",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/paigekato/geo-lookup/master/CHANGELOG.md",
+        "class": "somevendor\\geolookup\\GeoLookup"
+    }
+}
